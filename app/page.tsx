@@ -56,9 +56,7 @@ const sensors = useSensors(
       <h1 className="p-10 text-5xl">Tasks ☠️</h1>
       <DndContext onDragEnd={handleDragEnd} collisionDetection={closestCorners} sensors={sensors}>
       <Input onSubmit={addTask}/>
-      <div className="flex flex-col space-between w-auto p-10 border border-gray-500">
-        <Column tasks={tasks}/>
-      </div>
+      <Column tasks={tasks}/>
       </DndContext>
     </main>
   );
