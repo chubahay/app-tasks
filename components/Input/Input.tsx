@@ -14,7 +14,7 @@ export const Input = ({onSubmit}: any) => {
     }
 
     return (
-        <div>
+        <div className='w-auto'>
           <input type="text"  value={input} onChange={e => setInput(e.target.value)} className="m-4 bg-white text-black p-5"/>
           <button className="m-4 bg-white text-black p-5" onClick={handleSubmit}>Add</button>
         </div>

@@ -11,9 +11,9 @@ export const Task = ({id, title}: any) => {
     }
 
     return (
-        <div ref={setNodeRef} {...attributes} {...listeners} style={style} className="flex space-x-4 m-4 bg-white text-black p-5 touch-none">
+        <div ref={setNodeRef} {...attributes} {...listeners} style={style} className="space-x-3 m-1 w-auto bg-white text-black p-4 touch-none">
             <input type="checkbox" className="checkbox h-5 w-5"></input>
-            <span>{title}</span>
+            <span className="overflow-auto whitespace-normal">{title}</span>
         </div>
     )
 }

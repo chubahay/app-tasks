@@ -57,8 +57,10 @@ const sensors = useSensors(
     <main className="flex min-h-screen flex-col items-center p-24">
       <Header/>
       <DndContext onDragEnd={handleDragEnd} collisionDetection={closestCorners} sensors={sensors}>
+      <div className="flex flex-col flex-grow">
       <Input onSubmit={addTask}/>
       <Column tasks={tasks}/>
+      </div>
       </DndContext>
     </main>
   );
