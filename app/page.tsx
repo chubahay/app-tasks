@@ -1,10 +1,12 @@
 'use client'
 
-import Column  from "../components/Column/Column";
-import Input from "../components/Input/Input";
 import { DndContext, KeyboardSensor, PointerSensor, TouchSensor, closestCorners, useSensor, useSensors } from '@dnd-kit/core';
 import { sortableKeyboardCoordinates, arrayMove } from "@dnd-kit/sortable";
 import { useState } from 'react';
+
+import Column  from "../components/Column/Column";
+import Input from "../components/Input/Input";
+import Header from '@/components/Header/Header';
 
 const Home = () => {
 
@@ -53,7 +55,7 @@ const sensors = useSensors(
 
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
-      <h1 className="p-10 text-5xl">Tasks ☠️</h1>
+      <Header/>
       <DndContext onDragEnd={handleDragEnd} collisionDetection={closestCorners} sensors={sensors}>
       <Input onSubmit={addTask}/>
       <Column tasks={tasks}/>
