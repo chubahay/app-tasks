@@ -4,8 +4,8 @@ import { DndContext, KeyboardSensor, PointerSensor, TouchSensor, closestCorners,
 import { sortableKeyboardCoordinates, arrayMove } from "@dnd-kit/sortable";
 import { useState } from 'react';
 
-import Column  from "../components/Column/Column";
-import Input from "../components/Input/Input";
+import Column  from "@/components/Column/Column";
+import Input from "@/components/Input/Input";
 import Header from '@/components/Header/Header';
 
 const Home = () => {
