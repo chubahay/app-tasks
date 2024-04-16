@@ -15,6 +15,15 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }: any) {
+      const newUtilities = {
+        '.touch-none': {
+          'touch-action': 'none',
+        },
+      }
+      addUtilities(newUtilities)
+    }
+  ],
 };
 export default config;
