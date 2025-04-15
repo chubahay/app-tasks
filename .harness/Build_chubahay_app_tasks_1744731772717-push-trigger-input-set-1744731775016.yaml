@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_chubahay_app_tasks_1744731772717-push-trigger-input-set
+  identifier: Build_chubahay_app_tasks_1744731772717pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_chubahay_app_tasks_1744731772717
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
